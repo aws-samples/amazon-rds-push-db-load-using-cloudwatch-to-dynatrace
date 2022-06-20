@@ -1,0 +1,6 @@
+3 checks in tfsec are setup to be ignored based on our 2 requirements shown below
+
+1. we need the terraform code to get PI metrics for all RDS databases in the given account 
+2. we also want to use server side encryption for data at rest in our firehose failed backup S3 storage bucket using Amazon managed keys (SSE-S3)
+
+Look for comment lines in terraform code with "#tfsec:ignore" to locate these ignored settings. 
